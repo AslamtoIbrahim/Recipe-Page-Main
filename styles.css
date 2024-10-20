@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 65%;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 16px;
+    margin: 10% 0%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    color: gray;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2em;
+    color: hsl(30, 2%, 22%);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: hsl(14, 45%, 36%);
+}
+
+.inter {
+    font-weight: 500;
+}
+
+.Preparation {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 0.6em;
+}
+
+.Preparation p {
+    /* padding: 0 1em; */
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    font-size: large;
+    margin: 1em 0 0 1em;
+}
+
+.Preparation ul,
+.ingredients ul,
+.instructions ol {
+    margin: 0.8em 0;
+}
+
+.Preparation ul li,
+.ingredients ul li,
+.instructions ol li {
+    padding: 0.5em;
+}
+
+.Preparation ul li {
+    color: hsl(332, 51%, 32%);
+}
+
+.Preparation ul li span,
+.ingredients ul li span,
+.instructions ol li span {
+    color: hsl(320, 2%, 37%);
+    font-weight: normal;
+}
+
+.Preparation ul li span span,
+.instructions ol li span span {
+    font-weight: 700;
+}
+
+.ingredients ul,
+.instructions ol {
+    color: hsl(14, 45%, 36%);
+    padding: 0 1em;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    background-color: hsla(315, 2%, 37%, 0.479);
+    height: 0.01em;
+    margin: 1em 0;
+}
+
+.intertable {
+    color: hsl(320, 2%, 37%);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tbody tr td {
+    padding: 0.5em 1em;
+}
+
+tr:nth-child(1),
+tr:nth-child(2),
+tr:nth-child(3) {
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em;
+    border-bottom-color: hsl(300, 1%, 84%);
+}
+
+td:nth-child(2) {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.attribution a {
+    color: hsl(14, 45%, 36%);
+}
+
+@media screen and (max-width:750px) {
+    .card {
+        width: 70%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .card {
+        width: 75%;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .attribution {
+        font-size: 0.5rem;
+    }
+}
